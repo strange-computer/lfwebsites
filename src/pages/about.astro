@@ -1,0 +1,111 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+<MainLayout title="About | Lake Forest Websites" bodyClass="page-about">
+  <link rel="stylesheet" href="/css/pages/about.css" />
+
+  <!-- Hero -->
+  <header class="relative pt-40 pb-16 px-6 text-center">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] glow-bg pointer-events-none opacity-40"></div>
+    <div class="max-w-5xl mx-auto relative">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-6">
+        <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+        About Us
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">
+        Local, Reliable, <span class="text-gradient-orange">Built to Last</span>
+      </h1>
+      <p class="text-zinc-400 text-lg leading-relaxed">
+        We build fast, modern websites for local businesses—focused on clarity, performance, and long‑term results.
+      </p>
+    </div>
+  </header>
+
+  <main class="pb-24 px-6">
+    <!-- Mission -->
+    <section class="max-w-5xl mx-auto mb-12">
+      <div class="framer-card p-8 rounded-2xl">
+        <h2 class="text-2xl font-bold mb-4">Our Mission</h2>
+        <p class="text-zinc-300 leading-relaxed">
+          Too many sites look flashy but load slowly or miss what customers need. We take a different path:
+          clean builds, clear content, and dependable support—so your website helps the business every day.
+        </p>
+      </div>
+    </section>
+
+    <!-- Commitments -->
+    <section class="max-w-7xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">Our Commitment to You</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="framer-card p-8 rounded-2xl">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3M4 11h16M4 19h16"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">We Learn Your Business</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Goals, audience, and constraints come first—so the site is grounded in reality.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h10"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">We Focus on Results</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Clear navigation, strong CTAs, and mobile speed—not gimmicks.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">We Build to Last</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Clean structure, accessibility, and performance baked in from day one.</p>
+        </div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6 mt-6">
+        <div class="framer-card p-8 rounded-2xl">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Clear, Fair Pricing</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Simple proposals, no upsells you don’t need, and scope you can trust.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Real, Local Support</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">No ticket mills—talk to the people who built your site and can actually help.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section class="max-w-7xl mx-auto mt-12">
+      <div class="framer-card p-8 rounded-2xl">
+        <h2 class="text-2xl font-bold mb-4">Serving Southern California</h2>
+        <p class="text-zinc-400">Based in Lake Forest, we work with businesses across Orange County and nearby regions.</p>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-3 py-1 text-xs rounded bg-white/5 border border-white/10 text-zinc-300">Lake Forest</span>
+          <span class="px-3 py-1 text-xs rounded bg-white/5 border border-white/10 text-zinc-300">Irvine</span>
+          <span class="px-3 py-1 text-xs rounded bg-white/5 border border-white/10 text-zinc-300">Mission Viejo</span>
+          <span class="px-3 py-1 text-xs rounded bg-white/5 border border-white/10 text-zinc-300">Laguna Hills</span>
+          <span class="px-3 py-1 text-xs rounded bg-white/5 border border-white/10 text-zinc-300">Tustin</span>
+          <span class="px-3 py-1 text-xs rounded bg-white/5 border border-white/10 text-zinc-300">Orange County</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="text-center mt-16">
+      <div class="inline-flex gap-3">
+        <a href="/services" class="px-10 py-5 bg-orange-600 text-white font-bold rounded-full hover:bg-orange-500 transition-colors text-lg btn-glow">
+          Explore services
+        </a>
+        <a href="/contact" class="px-10 py-5 bg-white/5 text-white font-bold rounded-full border border-white/10 hover:bg-white/10 transition-colors text-lg">
+          Talk to our team
+        </a>
+      </div>
+      <p class="text-zinc-500 text-sm mt-3">Prefer a call? Add your number in the email.</p>
+    </section>
+  </main>
+</MainLayout>
+
+

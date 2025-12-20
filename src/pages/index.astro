@@ -1,11 +1,358 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import MainLayout from '../layouts/MainLayout.astro';
 ---
+<MainLayout title="Lake Forest Websites | Modern Dark Design" bodyClass="page-home">
+  <link rel="stylesheet" href="/css/pages/home.css" />
 
-<Layout>
-	<Welcome />
-</Layout>
+  <section class="relative pt-40 pb-32 px-6 flex flex-col items-center justify-center text-center">
+    <!-- Hero background video -->
+    <video
+      class="absolute inset-0 -z-10 w-full h-full object-cover"
+      src="/videos/backgroundvideo.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+    ></video>
+    <!-- Dark overlay + glow -->
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-black/90 via-black/75 to-black/90"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] glow-bg pointer-events-none opacity-50"></div>
+
+    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-8">
+      <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+      Based in Lake Forest, CA
+    </div>
+
+    <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-6 max-w-4xl mx-auto leading-tight">
+      Custom Website Design.<br />
+      <span class="text-zinc-500">Real Results.</span>
+    </h1>
+
+    <p class="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-10 leading-relaxed">
+      100% custom websites built for your business. No templates. No offshore call centers. Just a partner you can count on.
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 w-full justify-center">
+      <a href="#" class="px-8 py-4 bg-orange-600 text-white font-semibold rounded-xl btn-glow hover:bg-orange-500 transition-colors">
+        Request Consultation
+      </a>
+      <a href="#" class="px-8 py-4 bg-white/5 text-white font-semibold rounded-xl border border-white/10 hover:bg-white/10 transition-colors">
+        View Our Work
+      </a>
+    </div>
+
+    <div class="mt-20 grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-16 border-t border-white/10 pt-10">
+      <div>
+        <div class="text-3xl font-bold text-white mb-1">Custom Design</div>
+        <div class="text-sm text-zinc-500">Tailored to your brand and goals</div>
+      </div>
+      <div>
+        <div class="text-3xl font-bold text-white mb-1">Mobile‑first</div>
+        <div class="text-sm text-zinc-500">Looks great on every device</div>
+      </div>
+      <div class="col-span-2 md:col-span-1">
+        <div class="text-3xl font-bold text-white mb-1">Straightforward Pricing</div>
+        <div class="text-sm text-zinc-500">Clear scope, no surprises</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-6 bg-zinc-900/30 border-y border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Not Just a Website.<br />
+            <span class="text-gradient-orange">A Partner You Can Count On.</span>
+          </h2>
+          <div class="space-y-8">
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center flex-shrink-0 border border-white/10">
+                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Custom, Functional Design</h3>
+                <p class="text-zinc-400 leading-relaxed">We craft unique websites that reflect your brand. No bloated templates that slow you down.</p>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center flex-shrink-0 border border-white/10">
+                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Real People, Real Support</h3>
+                <p class="text-zinc-400 leading-relaxed">No bots. No long waits. Speak directly to a team based in Lake Forest, CA.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative">
+          <div class="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-purple-500/20 blur-3xl rounded-full"></div>
+          <div class="framer-card p-8 rounded-2xl relative z-10">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500"></div>
+            </div>
+            <div class="space-y-4">
+              <div class="h-4 bg-zinc-700/50 rounded w-3/4"></div>
+              <div class="h-4 bg-zinc-700/50 rounded w-1/2"></div>
+              <div class="relative h-40 bg-zinc-800/50 rounded-lg border border-white/5 text-zinc-300 text-sm overflow-hidden">
+                <button id="lfwCopySnippet" class="absolute top-2 right-2 px-2.5 py-1 text-xs rounded-md bg-white/5 border border-white/10 text-zinc-300 hover:bg-white/10 transition-colors">
+                  Copy
+                </button>
+                <div class="h-full w-full overflow-hidden p-4">
+                  <pre class="font-mono text-left leading-6 whitespace-pre-wrap"><code id="lfwSnippet"></code><span class="code-caret" aria-hidden="true"></span></pre>
+                </div>
+              </div>
+              <div class="h-4 bg-zinc-700/50 rounded w-full"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mid-page CTA stripe -->
+  <section class="px-6 py-12 border-t border-white/5 bg-gradient-to-r from-zinc-900/40 via-zinc-900/20 to-zinc-900/40">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h3 class="text-2xl md:text-3xl font-bold">Let’s make your website a growth asset.</h3>
+        <p class="text-zinc-400 mt-2">Fast, clear, and built to last—without the bloat.</p>
+      </div>
+      <div class="flex gap-3">
+        <a href="/contact" class="px-6 py-3 bg-orange-600 text-white font-semibold rounded-full hover:bg-orange-500 transition-colors btn-glow">Request consult</a>
+        <a href="/portfolio" class="px-6 py-3 bg-white/5 text-white font-semibold rounded-full border border-white/10 hover:bg-white/10 transition-colors">See examples</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-32 px-6">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-5xl font-bold mb-4">What We Build</h2>
+        <p class="text-zinc-400">Tailored solutions for every stage of your business.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="framer-card p-8 rounded-2xl group cursor-pointer">
+          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-500/20 transition-colors">
+            <svg class="w-6 h-6 text-white group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Custom Websites</h3>
+          <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
+            Clean, functional websites designed for your goals, brand, and audience.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Brochure</span>
+            <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Portfolio</span>
+          </div>
+        </div>
+
+        <div class="framer-card p-8 rounded-2xl group cursor-pointer">
+          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-500/20 transition-colors">
+            <svg class="w-6 h-6 text-white group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Ecommerce Stores</h3>
+          <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
+            Online stores with secure checkout and scalable features for growth.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Shopify</span>
+            <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">WooCommerce</span>
+          </div>
+        </div>
+
+        <div class="framer-card p-8 rounded-2xl group cursor-pointer">
+          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-500/20 transition-colors">
+            <svg class="w-6 h-6 text-white group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Custom Development</h3>
+          <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
+            Advanced features for businesses that need more than just a website.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">API Integration</span>
+            <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Web Apps</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <!-- Logos/social proof (moved near testimonials) -->
+  <section class="px-6 py-10 border-t border-white/5">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-6 md:gap-10">
+      <div class="h-8">
+        <img src="/images/gaclogo.png" alt="GAC" class="h-8 w-auto object-contain opacity-90 grayscale hover:grayscale-0 transition" />
+      </div>
+      <div class="h-8">
+        <img src="/images/honkpill-logo.png" alt="Honkpill" class="h-8 w-auto object-contain opacity-90 grayscale hover:grayscale-0 transition" />
+      </div>
+      <div class="h-8">
+        <img src="/images/whatisthebeststuff-logo.png" alt="What Is The Best Stuff" class="h-8 w-auto object-contain opacity-90 grayscale hover:grayscale-0 transition" />
+      </div>
+      {Array.from({ length: 3 }).map((_, i) => (
+        <div class="h-8 w-28 md:w-32 rounded-md bg-white/5 border border-white/10 opacity-60 hover:opacity-100 transition" aria-label={`Client logo ${i + 2}`}></div>
+      ))}
+    </div>
+  </section>
+  
+  <!-- Testimonials -->
+  <section class="px-6 py-24 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">What Clients Say</h2>
+        <p class="text-zinc-400">Real feedback about process, speed, and outcomes.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="framer-card p-6 rounded-2xl">
+          <div class="flex text-orange-500 mb-4">★★★★★</div>
+          <p class="text-zinc-300 mb-6 text-sm leading-relaxed">“They made the process simple and handled updates quickly.”</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-zinc-700 flex items-center justify-center text-xs">MJ</div>
+            <span class="text-sm font-medium text-white">Local Services</span>
+          </div>
+        </div>
+        <div class="framer-card p-6 rounded-2xl">
+          <div class="flex text-orange-500 mb-4">★★★★★</div>
+          <p class="text-zinc-300 mb-6 text-sm leading-relaxed">“Clean design, faster site, and clearer calls to action.”</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-zinc-700 flex items-center justify-center text-xs">RS</div>
+            <span class="text-sm font-medium text-white">Professional</span>
+          </div>
+        </div>
+        <div class="framer-card p-6 rounded-2xl">
+          <div class="flex text-orange-500 mb-4">★★★★★</div>
+          <p class="text-zinc-300 mb-6 text-sm leading-relaxed">“Responsive team and solid results on mobile.”</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-zinc-700 flex items-center justify-center text-xs">LT</div>
+            <span class="text-sm font-medium text-white">Retail</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="px-6 py-24 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl font-bold mb-4">FAQs</h2>
+        <p class="text-zinc-400">Straight answers to common questions.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="framer-card p-6 rounded-2xl">
+          <details class="group">
+            <summary class="cursor-pointer text-white font-medium">How long does a typical site take?</summary>
+            <p class="mt-3 text-sm text-zinc-400">Small sites are often measured in weeks, not months. Timelines depend on content and feedback speed.</p>
+          </details>
+        </div>
+        <div class="framer-card p-6 rounded-2xl">
+          <details class="group">
+            <summary class="cursor-pointer text-white font-medium">Do you work with existing content?</summary>
+            <p class="mt-3 text-sm text-zinc-400">Yes. We can reuse what works, edit what needs clarity, and propose gaps to fill.</p>
+          </details>
+        </div>
+        <div class="framer-card p-6 rounded-2xl">
+          <details class="group">
+            <summary class="cursor-pointer text-white font-medium">What about hosting and support?</summary>
+            <p class="mt-3 text-sm text-zinc-400">We offer managed hosting and WordPress support for ongoing care. Or we’ll deploy to your provider.</p>
+          </details>
+        </div>
+        <div class="framer-card p-6 rounded-2xl">
+          <details class="group">
+            <summary class="cursor-pointer text-white font-medium">Is SEO included?</summary>
+            <p class="mt-3 text-sm text-zinc-400">Foundations are included (speed, structure, meta, headings). Local SEO packages are available if needed.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 px-6 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">What You Can Expect</h2>
+        <p class="text-zinc-400">Clear process, reliable communication, and quality outcomes.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="framer-card p-8 rounded-2xl">
+          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Discovery</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">We clarify goals, audience, and success criteria together.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl">
+          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Design</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Modern, accessible UI tailored to your brand and content.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl">
+          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v8m-4-4h8"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Build & Launch</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Fast, mobile‑first pages and a smooth handoff at launch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-32 px-6 text-center">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">Ready to build something great?</h2>
+      <p class="text-zinc-400 mb-10 text-lg">Local, reliable, and ready when you are.</p>
+      <a href="#" class="inline-block px-10 py-5 bg-white text-black font-bold rounded-full hover:bg-zinc-200 transition-colors text-lg">
+        Get a Free Quote
+      </a>
+      <p class="mt-8 text-zinc-500 text-sm">Lake Forest, CA</p>
+    </div>
+  </section>
+
+  <script>
+    (() => {
+      const lines = [
+        "> echo \"Welcome to Lake Forest Websites\"",
+        "> mkdir my-site && cd my-site",
+        "> code .",
+        "",
+        "// Fast, clean, mobile-first",
+      ];
+      const codeEl = document.getElementById('lfwSnippet');
+      if (!codeEl) return;
+      let lineIndex = 0;
+      let charIndex = 0;
+      const typeSpeedMs = 24;
+      function typeNext() {
+        if (lineIndex >= lines.length) return;
+        const line = lines[lineIndex];
+        if (charIndex <= line.length) {
+          codeEl.textContent += line.slice(charIndex, charIndex + 1);
+          charIndex += 1;
+        } else {
+          codeEl.textContent += "\\n";
+          lineIndex += 1;
+          charIndex = 0;
+        }
+        if (lineIndex < lines.length) setTimeout(typeNext, typeSpeedMs);
+      }
+      typeNext();
+      const copyBtn = document.getElementById('lfwCopySnippet');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(lines.join("\\n"));
+            const old = copyBtn.textContent;
+            copyBtn.textContent = "Copied";
+            setTimeout(() => (copyBtn.textContent = old), 1500);
+          } catch {}
+        });
+      }
+    })();
+  </script>
+</MainLayout>

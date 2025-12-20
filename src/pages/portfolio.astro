@@ -1,0 +1,95 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+<MainLayout title="Portfolio | Lake Forest Websites" bodyClass="page-portfolio">
+  <link rel="stylesheet" href="/css/pages/portfolio.css" />
+
+  <!-- Hero -->
+  <header class="relative pt-40 pb-16 px-6 text-center">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] glow-bg pointer-events-none opacity-40"></div>
+    <div class="max-w-5xl mx-auto relative">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-6">
+        <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+        Portfolio
+      </div>
+      <h1 class="text-4xl md:text-6xl font-bold tracking-tight mb-4">
+        Selected <span class="text-gradient-orange">Work</span>
+      </h1>
+      <p class="text-zinc-400 text-lg leading-relaxed">
+        A handful of recent builds. Each site is tailored to goals, content, and audience—no templates.
+      </p>
+    </div>
+  </header>
+
+  <main class="pb-24 px-6">
+    <!-- Featured projects -->
+    <section class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-3 gap-6">
+        {Array.from({ length: 6 }).map((_, i) => (
+          <div class="framer-card p-4 rounded-2xl group overflow-hidden">
+            <div class="relative h-44 rounded-xl border border-white/10 bg-gradient-to-br from-zinc-800/60 to-zinc-900/60 mb-4 overflow-hidden">
+              <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(251,146,60,0.12),transparent_40%)]"></div>
+              <div class="absolute bottom-2 right-2 text-[10px] px-2 py-1 rounded-full bg-white/10 border border-white/10 text-zinc-300">Mock</div>
+            </div>
+            <div class="px-2 pb-2">
+              <h3 class="text-lg font-semibold mb-1 text-white">Project Title {i + 1}</h3>
+              <p class="text-sm text-zinc-400 mb-3">Modern, fast, and mobile‑first with clear calls to action.</p>
+              <div class="flex flex-wrap gap-2 mb-3">
+                <span class="px-2 py-1 text-[11px] rounded bg-white/5 border border-white/10 text-zinc-300">Design</span>
+                <span class="px-2 py-1 text-[11px] rounded bg-white/5 border border-white/10 text-zinc-300">Build</span>
+                <span class="px-2 py-1 text-[11px] rounded bg-white/5 border border-white/10 text-zinc-300">Local SEO</span>
+              </div>
+              <ul class="text-[12px] text-zinc-400 space-y-1">
+                <li class="flex gap-2"><span class="text-orange-400">•</span> Clear service pages and CTAs</li>
+                <li class="flex gap-2"><span class="text-orange-400">•</span> Lightweight animations</li>
+                <li class="flex gap-2"><span class="text-orange-400">•</span> Fast on mobile</li>
+              </ul>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Process strip -->
+    <section class="max-w-7xl mx-auto mt-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-6">How We Deliver</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="framer-card p-6 rounded-2xl">
+          <div class="w-7 h-7 rounded-full bg-orange-600/20 border border-orange-500/30 text-orange-300 flex items-center justify-center mb-3">1</div>
+          <h3 class="font-semibold mb-2">Plan</h3>
+          <p class="text-sm text-zinc-400">Sitemap, content, and goals aligned.</p>
+        </div>
+        <div class="framer-card p-6 rounded-2xl">
+          <div class="w-7 h-7 rounded-full bg-orange-600/20 border border-orange-500/30 text-orange-300 flex items-center justify-center mb-3">2</div>
+          <h3 class="font-semibold mb-2">Design</h3>
+          <p class="text-sm text-zinc-400">Visual concepts refined together.</p>
+        </div>
+        <div class="framer-card p-6 rounded-2xl">
+          <div class="w-7 h-7 rounded-full bg-orange-600/20 border border-orange-500/30 text-orange-300 flex items-center justify-center mb-3">3</div>
+          <h3 class="font-semibold mb-2">Build</h3>
+          <p class="text-sm text-zinc-400">Clean, fast implementation and QA.</p>
+        </div>
+        <div class="framer-card p-6 rounded-2xl">
+          <div class="w-7 h-7 rounded-full bg-orange-600/20 border border-orange-500/30 text-orange-300 flex items-center justify-center mb-3">4</div>
+          <h3 class="font-semibold mb-2">Launch</h3>
+          <p class="text-sm text-zinc-400">Testing, deploy, and smooth handoff.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="text-center mt-16">
+      <div class="inline-flex gap-3">
+        <a href="mailto:info@example.com" class="px-10 py-5 bg-orange-600 text-white font-bold rounded-full hover:bg-orange-500 transition-colors text-lg btn-glow">
+          Request a free consult
+        </a>
+        <a href="/services" class="px-10 py-5 bg-white/5 text-white font-bold rounded-full border border-white/10 hover:bg-white/10 transition-colors text-lg">
+          Our services
+        </a>
+      </div>
+      <p class="text-zinc-500 text-sm mt-3">Prefer a call? Add your number in the email.</p>
+    </div>
+  </main>
+</MainLayout>
+
+

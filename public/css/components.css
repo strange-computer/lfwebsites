@@ -1,0 +1,62 @@
+@layer components {
+    /* Custom Gradient Text */
+    .text-gradient {
+        background: linear-gradient(to right, #fff, #a1a1aa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .text-gradient-orange {
+        background: linear-gradient(to right, #fb923c, #ea580c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    /* Subtle Glow Background */
+    .glow-bg {
+        background: radial-gradient(
+            circle at 50% 50%,
+            rgba(251, 146, 60, 0.15),
+            transparent 50%
+        );
+    }
+
+    /* Framer-style Cards */
+    .framer-card {
+        background: rgba(24, 24, 27, 0.6);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        transition: all 0.3s ease;
+    }
+    
+    .framer-card:hover {
+        border-color: rgba(251, 146, 60, 0.3);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 40px -10px rgba(0,0,0,0.5);
+    }
+
+    /* Button Glow */
+    .btn-glow {
+        box-shadow: 0 0 20px rgba(234, 88, 12, 0.3);
+        transition: all 0.3s ease;
+    }
+    .btn-glow:hover {
+        box-shadow: 0 0 30px rgba(234, 88, 12, 0.5);
+    }
+
+    /* Code typing caret for the demo snippet */
+    .code-caret {
+        display: inline-block;
+        width: 0.6ch;
+        height: 1em;
+        margin-left: 2px;
+        background-color: rgba(244, 244, 245, 0.75);
+        vertical-align: -10%;
+        animation: code-caret-blink 1s step-start infinite;
+    }
+    @keyframes code-caret-blink {
+        50% { opacity: 0; }
+    }
+}
+
+
