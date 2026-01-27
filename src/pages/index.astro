@@ -1,0 +1,384 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+<MainLayout title="Lake Forest Websites | Modern Dark Design" bodyClass="page-home">
+  <link rel="stylesheet" href="/css/pages/home.css" />
+
+  <section class="relative min-h-[85vh] md:min-h-[90vh] flex flex-col items-center justify-center text-center px-4 md:px-6 py-16 md:py-32">
+    <!-- Hero background video -->
+    <video
+      class="absolute inset-0 -z-10 w-full h-full object-cover"
+      src="/videos/backgroundvideo.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+    ></video>
+    <!-- Dark overlay + glow -->
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-black/95 via-black/85 to-black/95"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] glow-bg pointer-events-none opacity-50"></div>
+
+    <div class="hero-content inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-6 md:mb-8 backdrop-blur-sm">
+      <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+      Based in Lake Forest, CA
+    </div>
+
+    <h1 class="hero-content text-4xl sm:text-5xl md:text-8xl font-bold tracking-tight mb-6 md:mb-10 max-w-5xl mx-auto text-balance px-2 md:px-0" style="animation-delay: 0.1s">
+      Design for <span class="text-gradient-orange">Humans</span>.<br />
+      Rank for <span class="text-gradient-orange">Machines</span>.
+    </h1>
+
+    <p class="hero-content text-base md:text-xl text-zinc-400 max-w-2xl mx-auto mb-8 md:mb-14 leading-relaxed px-2 md:px-0" style="animation-delay: 0.2s">
+      If you aren't at the top, you don't exist. We bridge the gap between "just a website" and a dominant market presence with elite SEO and psychological-led design.
+    </p>
+
+    <div class="hero-content flex flex-col sm:flex-row gap-3 md:gap-4 w-full justify-center max-w-md sm:max-w-none px-4 md:px-0" style="animation-delay: 0.3s">
+      <a href="#" class="px-6 md:px-8 py-3 md:py-4 bg-orange-600 text-white font-semibold rounded-xl btn-glow hover:bg-orange-500 transition-colors relative min-h-[44px] flex items-center justify-center text-sm md:text-base">
+        Request Consultation
+      </a>
+      <a href="#" class="px-6 md:px-8 py-3 md:py-4 bg-white/5 text-white font-semibold rounded-xl border border-white/10 hover:bg-white/10 transition-all hover:border-white/20 relative min-h-[44px] flex items-center justify-center text-sm md:text-base">
+        View Our Work
+      </a>
+    </div>
+
+    <div class="mt-12 md:mt-20 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-16 border-t border-white/10 pt-6 md:pt-10 fade-in-up px-4 md:px-0">
+      <div class="fade-in-up stagger-1">
+        <div class="text-2xl md:text-3xl font-bold text-white mb-1">Custom Design</div>
+        <div class="text-xs md:text-sm text-zinc-500">Tailored to your brand and goals</div>
+      </div>
+      <div class="fade-in-up stagger-2">
+        <div class="text-2xl md:text-3xl font-bold text-white mb-1">Mobile‑first</div>
+        <div class="text-xs md:text-sm text-zinc-500">Looks great on every device</div>
+      </div>
+      <div class="col-span-2 md:col-span-1 fade-in-up stagger-3">
+        <div class="text-2xl md:text-3xl font-bold text-white mb-1">Straightforward Pricing</div>
+        <div class="text-xs md:text-sm text-zinc-500">Clear scope, no surprises</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 md:py-24 px-4 md:px-6 bg-zinc-900/30 border-y border-white/5 mesh-gradient">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-2 gap-16 items-center">
+        <div class="fade-in-up">
+          <h2 class="text-2xl md:text-4xl font-bold mb-4 md:mb-6 text-balance">
+            More Than a Website.<br />
+            <span class="text-gradient-orange">A Team That Delivers.</span>
+          </h2>
+          <div class="space-y-8">
+            <div class="flex gap-4 fade-in-up stagger-1">
+              <div class="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center flex-shrink-0 border border-white/10 group-hover:border-orange-500/30 transition-colors">
+                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Custom, Purpose-Built Design</h3>
+                <p class="text-zinc-400 leading-relaxed">Every site is built from scratch for your specific needs. No template bloat, no unnecessary features—just what works for your business.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 fade-in-up stagger-2">
+              <div class="w-12 h-12 rounded-full bg-zinc-800 flex items-center justify-center flex-shrink-0 border border-white/10 group-hover:border-orange-500/30 transition-colors">
+                <svg class="w-6 h-6 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+              </div>
+              <div>
+                <h3 class="text-xl font-semibold text-white mb-2">Direct Access to Your Team</h3>
+                <p class="text-zinc-400 leading-relaxed">Skip the ticket queues. Work directly with the people who built your site, based right here in Lake Forest, CA.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="relative scale-in">
+          <div class="absolute inset-0 bg-gradient-to-tr from-orange-500/20 to-purple-500/20 blur-3xl rounded-full animate-pulse"></div>
+          <div class="framer-card p-8 rounded-2xl relative z-10">
+            <div class="flex items-center gap-4 mb-6">
+              <div class="w-3 h-3 rounded-full bg-red-500"></div>
+              <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+              <div class="w-3 h-3 rounded-full bg-green-500"></div>
+            </div>
+            <div class="space-y-4">
+              <div class="h-4 bg-zinc-700/50 rounded w-3/4"></div>
+              <div class="h-4 bg-zinc-700/50 rounded w-1/2"></div>
+              <div class="relative h-40 bg-zinc-800/50 rounded-lg border border-white/5 text-zinc-300 text-sm overflow-hidden">
+                <button id="lfwCopySnippet" class="absolute top-2 right-2 px-2.5 py-1 text-xs rounded-md bg-white/5 border border-white/10 text-zinc-300 hover:bg-white/10 transition-colors">
+                  Copy
+                </button>
+                <div class="h-full w-full overflow-hidden p-4">
+                  <pre class="font-mono text-left leading-6 whitespace-pre-wrap"><code id="lfwSnippet"></code><span class="code-caret" aria-hidden="true"></span></pre>
+                </div>
+              </div>
+              <div class="h-4 bg-zinc-700/50 rounded w-full"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mid-page CTA stripe -->
+  <section class="px-4 md:px-6 py-8 md:py-12 border-t border-white/5 bg-gradient-to-r from-zinc-900/40 via-zinc-900/20 to-zinc-900/40 mesh-gradient fade-in-up">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h3 class="text-2xl md:text-3xl font-bold">Let’s make your website a growth asset.</h3>
+        <p class="text-zinc-400 mt-2">Fast, clear, and built to last—without the bloat.</p>
+      </div>
+      <div class="flex gap-3 fade-in-up stagger-1">
+        <a href="/contact" class="px-6 py-3 bg-orange-600 text-white font-semibold rounded-full hover:bg-orange-500 transition-colors btn-glow relative">Request consult</a>
+        <a href="/portfolio" class="px-6 py-3 bg-white/5 text-white font-semibold rounded-full border border-white/10 hover:bg-white/10 transition-all hover:border-white/20">See examples</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-32 px-4 md:px-6 what-we-build-section">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-8 md:mb-16 fade-in-up">
+        <h2 class="text-2xl md:text-5xl font-bold mb-4 text-balance">What We Build</h2>
+        <p class="text-zinc-400">Tailored solutions for every stage of your business.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-4 md:gap-6">
+        <div class="framer-card p-8 rounded-2xl group cursor-pointer fade-in-up stagger-1 relative overflow-hidden custom-websites-card">
+          <!-- Background Image -->
+          <div class="absolute inset-0 -z-10 what-we-build-bg"></div>
+          <!-- Dark overlay with orange tint for brand consistency -->
+          <div class="absolute inset-0 -z-10 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
+          <div class="absolute inset-0 -z-10 bg-gradient-to-br from-orange-950/15 via-transparent to-purple-950/10"></div>
+          <!-- Content wrapper with relative positioning -->
+          <div class="relative z-10">
+            <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-500/20 transition-colors">
+              <svg class="w-6 h-6 text-white group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Custom Websites</h3>
+            <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
+              Purpose-driven websites tailored to your business objectives, brand identity, and target audience.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Brochure</span>
+              <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Portfolio</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="framer-card p-8 rounded-2xl group cursor-pointer fade-in-up stagger-2 relative overflow-hidden ecommerce-stores-card">
+          <!-- Background Image -->
+          <div class="absolute inset-0 -z-10 ecommerce-stores-bg"></div>
+          <!-- Dark overlay with orange tint for brand consistency -->
+          <div class="absolute inset-0 -z-10 bg-gradient-to-b from-black/60 via-black/50 to-black/60"></div>
+          <div class="absolute inset-0 -z-10 bg-gradient-to-br from-orange-950/12 via-transparent to-purple-950/8"></div>
+          <!-- Content wrapper with relative positioning -->
+          <div class="relative z-10">
+            <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-500/20 transition-colors">
+              <svg class="w-6 h-6 text-white group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Ecommerce Stores</h3>
+            <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
+              Full-featured online stores with secure payment processing and flexible options that scale with your business.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Shopify</span>
+              <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">WooCommerce</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="framer-card p-8 rounded-2xl group cursor-pointer fade-in-up stagger-3 relative overflow-hidden custom-development-card">
+          <!-- Video Background -->
+          <video class="absolute inset-0 -z-10 custom-dev-video-bg" autoplay muted loop playsinline>
+            <source src="/videos/CodeBeautifulForever.mp4" type="video/mp4">
+          </video>
+          <!-- Dark overlay with orange tint for brand consistency -->
+          <div class="absolute inset-0 -z-10 bg-gradient-to-b from-black/70 via-black/60 to-black/70"></div>
+          <div class="absolute inset-0 -z-10 bg-gradient-to-br from-orange-950/15 via-transparent to-purple-950/10"></div>
+          <!-- Content wrapper with relative positioning -->
+          <div class="relative z-10">
+            <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-500/20 transition-colors">
+              <svg class="w-6 h-6 text-white group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Custom Development</h3>
+            <p class="text-sm text-zinc-400 mb-6 leading-relaxed">
+              Tailored functionality and integrations for businesses requiring specialized web solutions.
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">API Integration</span>
+              <span class="px-2 py-1 text-xs bg-white/5 rounded text-zinc-300">Web Apps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <!-- Logos/social proof (moved near testimonials) -->
+  <section class="px-4 md:px-6 py-8 md:py-10 border-t border-white/5">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center gap-6 md:gap-10">
+      <div class="h-8">
+        <img src="/images/gaclogo.png" alt="GAC" class="h-8 w-auto object-contain opacity-90 grayscale hover:grayscale-0 transition" />
+      </div>
+      <div class="h-8">
+        <img src="/images/honkpill-logo.png" alt="Honkpill" class="h-8 w-auto object-contain opacity-90 grayscale hover:grayscale-0 transition" />
+      </div>
+      <div class="h-8">
+        <img src="/images/whatisthebeststuff-logo.png" alt="What Is The Best Stuff" class="h-8 w-auto object-contain opacity-90 grayscale hover:grayscale-0 transition" />
+      </div>
+      {Array.from({ length: 3 }).map((_, i) => (
+        <div class="h-8 w-28 md:w-32 rounded-md bg-white/5 border border-white/10 opacity-60 hover:opacity-100 transition" aria-label={`Client logo ${i + 2}`}></div>
+      ))}
+    </div>
+  </section>
+  
+  <!-- Testimonials -->
+  <section class="px-4 md:px-6 py-12 md:py-24 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-4">What Clients Say</h2>
+        <p class="text-zinc-400">Real feedback about process, speed, and outcomes.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4 md:gap-6">
+        <div class="framer-card p-6 rounded-2xl">
+          <div class="flex text-orange-500 mb-4">★★★★★</div>
+          <p class="text-zinc-300 mb-6 text-sm leading-relaxed">“They made the process simple and handled updates quickly.”</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-zinc-700 flex items-center justify-center text-xs">MJ</div>
+            <span class="text-sm font-medium text-white">Local Services</span>
+          </div>
+        </div>
+        <div class="framer-card p-6 rounded-2xl">
+          <div class="flex text-orange-500 mb-4">★★★★★</div>
+          <p class="text-zinc-300 mb-6 text-sm leading-relaxed">“Clean design, faster site, and clearer calls to action.”</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-zinc-700 flex items-center justify-center text-xs">RS</div>
+            <span class="text-sm font-medium text-white">Professional</span>
+          </div>
+        </div>
+        <div class="framer-card p-6 rounded-2xl">
+          <div class="flex text-orange-500 mb-4">★★★★★</div>
+          <p class="text-zinc-300 mb-6 text-sm leading-relaxed">“Responsive team and solid results on mobile.”</p>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-zinc-700 flex items-center justify-center text-xs">LT</div>
+            <span class="text-sm font-medium text-white">Retail</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="px-4 md:px-6 py-12 md:py-24 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-10 fade-in-up">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-balance">FAQs</h2>
+        <p class="text-zinc-400">Straight answers to common questions.</p>
+      </div>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="framer-card p-6 rounded-2xl fade-in-up stagger-1">
+          <details class="group">
+            <summary class="cursor-pointer text-white font-medium transition-colors hover:text-orange-400">How long does a typical site take?</summary>
+            <p class="mt-3 text-sm text-zinc-400">Small sites are often measured in weeks, not months. Timelines depend on content and feedback speed.</p>
+          </details>
+        </div>
+        <div class="framer-card p-6 rounded-2xl fade-in-up stagger-2">
+          <details class="group">
+            <summary class="cursor-pointer text-white font-medium transition-colors hover:text-orange-400">Do you work with existing content?</summary>
+            <p class="mt-3 text-sm text-zinc-400">Yes. We can reuse what works, edit what needs clarity, and propose gaps to fill.</p>
+          </details>
+        </div>
+        <div class="framer-card p-6 rounded-2xl fade-in-up stagger-3">
+          <details class="group">
+            <summary class="cursor-pointer text-white font-medium transition-colors hover:text-orange-400">What about hosting and support?</summary>
+            <p class="mt-3 text-sm text-zinc-400">We offer managed hosting and WordPress support for ongoing care. Or we’ll deploy to your provider.</p>
+          </details>
+        </div>
+        <div class="framer-card p-6 rounded-2xl fade-in-up stagger-4">
+          <details class="group">
+            <summary class="cursor-pointer text-white font-medium transition-colors hover:text-orange-400">Is SEO included?</summary>
+            <p class="mt-3 text-sm text-zinc-400">Foundations are included (speed, structure, meta, headings). Local SEO packages are available if needed.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-12 md:py-24 px-4 md:px-6 border-t border-white/5 mesh-gradient">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12 fade-in-up">
+        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-balance">What You Can Expect</h2>
+        <p class="text-zinc-400">Clear process, reliable communication, and quality outcomes.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4 md:gap-6">
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-1">
+          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-500/20 transition-colors">
+            <svg class="w-6 h-6 text-white group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Discovery</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">We clarify goals, audience, and success criteria together.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-2">
+          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-500/20 transition-colors">
+            <svg class="w-6 h-6 text-white group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Design</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Modern, accessible UI tailored to your brand and content.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-3">
+          <div class="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 group-hover:bg-orange-500/20 transition-colors">
+            <svg class="w-6 h-6 text-white group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v8m-4-4h8"/></svg>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Build & Launch</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Fast, mobile‑first pages and a smooth handoff at launch.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 md:py-32 px-4 md:px-6 text-center mesh-gradient">
+    <div class="max-w-3xl mx-auto fade-in-up">
+      <h2 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6 text-balance">Ready to build something great?</h2>
+      <p class="text-zinc-400 mb-6 md:mb-10 text-base md:text-lg">Local, reliable, and ready when you are.</p>
+      <a href="#" class="inline-block px-8 md:px-10 py-4 md:py-5 bg-white text-black font-bold rounded-full hover:bg-zinc-200 transition-all hover:scale-105 text-base md:text-lg relative btn-glow min-h-[44px] flex items-center justify-center mx-auto">
+        Get a Free Quote
+      </a>
+      <p class="mt-8 text-zinc-500 text-sm">Lake Forest, CA</p>
+    </div>
+  </section>
+
+  <script>
+    (() => {
+      const lines = [
+        "> echo \"Welcome to Lake Forest Websites\"",
+        "> mkdir my-site && cd my-site",
+        "> code .",
+        "",
+        "// Fast, clean, mobile-first",
+      ];
+      const codeEl = document.getElementById('lfwSnippet');
+      if (!codeEl) return;
+      let lineIndex = 0;
+      let charIndex = 0;
+      const typeSpeedMs = 24;
+      function typeNext() {
+        if (lineIndex >= lines.length) return;
+        const line = lines[lineIndex];
+        if (charIndex <= line.length) {
+          codeEl.textContent += line.slice(charIndex, charIndex + 1);
+          charIndex += 1;
+        } else {
+          codeEl.textContent += "\\n";
+          lineIndex += 1;
+          charIndex = 0;
+        }
+        if (lineIndex < lines.length) setTimeout(typeNext, typeSpeedMs);
+      }
+      typeNext();
+      const copyBtn = document.getElementById('lfwCopySnippet');
+      if (copyBtn) {
+        copyBtn.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(lines.join("\\n"));
+            const old = copyBtn.textContent;
+            copyBtn.textContent = "Copied";
+            setTimeout(() => (copyBtn.textContent = old), 1500);
+          } catch {}
+        });
+      }
+    })();
+  </script>
+</MainLayout>

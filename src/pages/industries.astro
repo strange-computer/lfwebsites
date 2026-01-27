@@ -1,0 +1,150 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+---
+<MainLayout title="Industries | Lake Forest Websites" bodyClass="page-industries">
+  <link rel="stylesheet" href="/css/pages/industries.css" />
+
+  <!-- Hero -->
+  <header class="relative pt-32 md:pt-40 pb-12 md:pb-16 px-4 md:px-6 text-center">
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[600px] glow-bg pointer-events-none opacity-40"></div>
+    <div class="max-w-5xl mx-auto relative">
+      <div class="hero-content inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-orange-400 mb-6 backdrop-blur-sm">
+        <span class="w-2 h-2 rounded-full bg-orange-500 animate-pulse"></span>
+        Industries
+      </div>
+      <h1 class="hero-content text-3xl md:text-6xl font-bold tracking-tight mb-4 text-balance" style="animation-delay: 0.1s">
+        Websites for <span class="text-gradient-orange">Local Businesses</span>
+      </h1>
+      <p class="hero-content text-zinc-400 text-base md:text-lg leading-relaxed px-2 md:px-0" style="animation-delay: 0.2s">
+        Clear messaging, fast load times, and conversion‑focused pages—built for the way local companies actually win customers.
+      </p>
+    </div>
+  </header>
+
+  <main class="pb-16 md:pb-24 px-4 md:px-6">
+    <!-- Why choose us for local -->
+    <section class="max-w-7xl mx-auto mesh-gradient py-8 md:py-12 border-t border-white/5">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-1 group">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4 group-hover:bg-orange-500/25 group-hover:scale-110 transition-all">
+            <svg class="w-5 h-5 text-orange-400 group-hover:text-orange-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h10"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Designed for Your Business</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">No one‑size‑fits‑all themes. Layouts and messaging are tailored to your services, service areas, and customers.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-2 group">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4 group-hover:bg-orange-500/25 group-hover:scale-110 transition-all">
+            <svg class="w-5 h-5 text-orange-400 group-hover:text-orange-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6v12m6-6H6"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Built to Last</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Clean code, mobile‑first structure, and performance best practices—easy to manage and ready to grow.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-3 group">
+          <div class="w-10 h-10 rounded-xl bg-orange-500/15 border border-orange-500/20 flex items-center justify-center mb-4 group-hover:bg-orange-500/25 group-hover:scale-110 transition-all">
+            <svg class="w-5 h-5 text-orange-400 group-hover:text-orange-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-2">Conversion‑First</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Service pages, trust signals, reviews, maps, and clear CTAs make it easy to call, book, or request a quote.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sectors -->
+    <section class="max-w-7xl mx-auto mt-8 md:mt-12 border-t border-white/5 pt-8 md:pt-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 fade-in-up text-balance">Industries We Serve</h2>
+      <div class="grid md:grid-cols-3 gap-4 md:gap-6">
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-1">
+          <h3 class="text-lg font-semibold mb-2">Contractors & Trades</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">HVAC, electricians, plumbers, concrete, landscaping. Emphasis on services, before/after, financing, and fast contact.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-2">
+          <h3 class="text-lg font-semibold mb-2">Professional Services</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Attorneys, CPAs, consultants, healthcare. Credibility, clarity, and simple intake flows.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-3">
+          <h3 class="text-lg font-semibold mb-2">Restaurants & Food</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Menus, locations, hours, and online ordering links—organized for quick decisions on mobile.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-1">
+          <h3 class="text-lg font-semibold mb-2">Home & Property</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Remodeling, cleaning, property services. Galleries, service areas, and quote forms that convert.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-2">
+          <h3 class="text-lg font-semibold mb-2">Retail & Local Services</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Appointment links, reviews, and product highlights; designed to drive foot traffic and calls.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-3">
+          <h3 class="text-lg font-semibold mb-2">Education & Non‑profits</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Clear navigation, accessibility, programs, events, and donation pathways.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- What you get -->
+    <section class="max-w-7xl mx-auto mt-8 md:mt-12 border-t border-white/5 pt-8 md:pt-12 mesh-gradient py-8 md:py-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 fade-in-up text-balance">What You Get</h2>
+      <div class="grid md:grid-cols-3 gap-4 md:gap-6">
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-1">
+          <h3 class="text-xl font-semibold mb-2">Service & Location Pages</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Structured pages for each service and city you target support both users and local SEO.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-2">
+          <h3 class="text-xl font-semibold mb-2">Reviews & Trust Signals</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Testimonials, badges, and policies in the right places to reduce friction and increase inquiries.</p>
+        </div>
+        <div class="framer-card p-8 rounded-2xl fade-in-up stagger-3">
+          <h3 class="text-xl font-semibold mb-2">Speed, Security, & Hygiene</h3>
+          <p class="text-sm text-zinc-400 leading-relaxed">Core Web Vitals, sitemaps, redirects, and clean structure so search and customers don’t struggle.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="max-w-7xl mx-auto mt-8 md:mt-12 border-t border-white/5 pt-8 md:pt-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 fade-in-up text-balance">Our Simple Process</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4 md:gap-6 relative">
+        <!-- Connecting line for desktop -->
+        <div class="hidden md:block absolute top-8 left-0 right-0 h-0.5 bg-gradient-to-r from-orange-500/20 via-orange-500/30 to-orange-500/20 -z-10" style="width: calc(100% - 2rem); margin: 0 1rem;"></div>
+        <div class="framer-card p-6 rounded-2xl fade-in-up stagger-1 group">
+          <div class="w-7 h-7 rounded-full bg-orange-600/20 border border-orange-500/30 text-orange-300 flex items-center justify-center mb-3 group-hover:bg-orange-500/30 group-hover:scale-110 transition-all font-semibold">1</div>
+          <h3 class="font-semibold mb-2">Discovery</h3>
+          <p class="text-sm text-zinc-400">Goals, audience, competitive context.</p>
+        </div>
+        <div class="framer-card p-6 rounded-2xl fade-in-up stagger-2 group">
+          <div class="w-7 h-7 rounded-full bg-orange-600/20 border border-orange-500/30 text-orange-300 flex items-center justify-center mb-3 group-hover:bg-orange-500/30 group-hover:scale-110 transition-all font-semibold">2</div>
+          <h3 class="font-semibold mb-2">Sitemap & Design</h3>
+          <p class="text-sm text-zinc-400">Structure and visuals reviewed together.</p>
+        </div>
+        <div class="framer-card p-6 rounded-2xl fade-in-up stagger-3 group">
+          <div class="w-7 h-7 rounded-full bg-orange-600/20 border border-orange-500/30 text-orange-300 flex items-center justify-center mb-3 group-hover:bg-orange-500/30 group-hover:scale-110 transition-all font-semibold">3</div>
+          <h3 class="font-semibold mb-2">Build</h3>
+          <p class="text-sm text-zinc-400">Clean implementation with content and QA.</p>
+        </div>
+        <div class="framer-card p-6 rounded-2xl fade-in-up stagger-4 group">
+          <div class="w-7 h-7 rounded-full bg-orange-600/20 border border-orange-500/30 text-orange-300 flex items-center justify-center mb-3 group-hover:bg-orange-500/30 group-hover:scale-110 transition-all font-semibold">4</div>
+          <h3 class="font-semibold mb-2">Launch</h3>
+          <p class="text-sm text-zinc-400">Cross‑device testing and go‑live checklist.</p>
+        </div>
+        <div class="framer-card p-6 rounded-2xl fade-in-up stagger-1 group">
+          <div class="w-7 h-7 rounded-full bg-orange-600/20 border border-orange-500/30 text-orange-300 flex items-center justify-center mb-3 group-hover:bg-orange-500/30 group-hover:scale-110 transition-all font-semibold">5</div>
+          <h3 class="font-semibold mb-2">Support</h3>
+          <p class="text-sm text-zinc-400">Updates, hosting, and growth options.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="text-center mt-12 md:mt-16 border-t border-white/5 pt-8 md:pt-12 mesh-gradient py-8 md:py-12 fade-in-up px-4">
+      <div class="flex flex-col sm:flex-row gap-3 justify-center items-center">
+        <a href="mailto:info@example.com" class="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-orange-600 text-white font-bold rounded-full hover:bg-orange-500 transition-all text-base md:text-lg btn-glow relative hover:scale-105 min-h-[44px] flex items-center justify-center">
+          Talk to our team
+        </a>
+        <a href="/services" class="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-white/5 text-white font-bold rounded-full border border-white/10 hover:bg-white/10 transition-all hover:border-white/20 text-base md:text-lg min-h-[44px] flex items-center justify-center">
+          Explore services
+        </a>
+      </div>
+      <p class="text-zinc-500 text-sm mt-3 text-balance px-4">Prefer a call? Add your number in the email.</p>
+    </section>
+  </main>
+</MainLayout>
+

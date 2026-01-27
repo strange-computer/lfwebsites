@@ -1,0 +1,141 @@
+@layer pages {
+    /* Page-specific styles for the home page can go here, scoped by .page-home */
+    /* .page-home .hero { padding-block: 4rem; } */
+    
+    /* Custom Websites Card with Background Image */
+    .custom-websites-card {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .custom-websites-card .what-we-build-bg {
+        background-image: url('/images/Laptop3cutout.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(2px) brightness(0.5) saturate(0.8) contrast(1.05);
+        transform: scale(1.05);
+        opacity: 1;
+        will-change: transform;
+    }
+    
+    /* Enhanced card legibility for custom websites card */
+    .custom-websites-card {
+        background: rgba(24, 24, 27, 0.75);
+        backdrop-filter: blur(16px) saturate(180%);
+        border-color: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+    
+    .custom-websites-card:hover {
+        background: rgba(24, 24, 27, 0.85);
+        border-color: rgba(251, 146, 60, 0.35);
+        box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(251, 146, 60, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+        transform: translateY(-2px);
+    }
+    
+    /* Ensure text remains legible in custom websites card */
+    .custom-websites-card h3 {
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .custom-websites-card p {
+        text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .custom-websites-card span {
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    }
+    
+    /* Custom Development Card with Video Background */
+    .custom-development-card {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .custom-development-card .custom-dev-video-bg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: blur(2px) brightness(0.5) saturate(0.8) contrast(1.05);
+        transform: scale(1.05);
+        will-change: transform;
+    }
+    
+    /* Enhanced card legibility for custom development card */
+    .custom-development-card {
+        background: rgba(24, 24, 27, 0.75);
+        backdrop-filter: blur(16px) saturate(180%);
+        border-color: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+    
+    .custom-development-card:hover {
+        background: rgba(24, 24, 27, 0.85);
+        border-color: rgba(251, 146, 60, 0.35);
+        box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(251, 146, 60, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+        transform: translateY(-2px);
+    }
+    
+    /* Ensure text remains legible in custom development card */
+    .custom-development-card h3 {
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .custom-development-card p {
+        text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .custom-development-card span {
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    }
+    
+    /* Ecommerce Stores Card with Background Image */
+    .ecommerce-stores-card {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .ecommerce-stores-card .ecommerce-stores-bg {
+        background-image: url('/images/EcommercestoreGraphic.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: blur(1.5px) brightness(0.6) saturate(0.85) contrast(1.05);
+        transform: scale(1.05);
+        opacity: 1;
+        will-change: transform;
+        width: 100%;
+        height: 100%;
+    }
+    
+    /* Enhanced card legibility for ecommerce stores card */
+    .ecommerce-stores-card {
+        background: rgba(24, 24, 27, 0.75);
+        backdrop-filter: blur(16px) saturate(180%);
+        border-color: rgba(255, 255, 255, 0.15);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+    
+    .ecommerce-stores-card:hover {
+        background: rgba(24, 24, 27, 0.85);
+        border-color: rgba(251, 146, 60, 0.35);
+        box-shadow: 0 12px 48px rgba(0, 0, 0, 0.6), 0 0 0 1px rgba(251, 146, 60, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+        transform: translateY(-2px);
+    }
+    
+    /* Ensure text remains legible in ecommerce stores card */
+    .ecommerce-stores-card h3 {
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+    
+    .ecommerce-stores-card p {
+        text-shadow: 0 1px 6px rgba(0, 0, 0, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    
+    .ecommerce-stores-card span {
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    }
+}
+
+
